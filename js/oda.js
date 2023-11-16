@@ -28,10 +28,10 @@
    //sol 
    circleSVG("30", "30" ,"20", "solid", "fill::rgb(247, 213, 24)");
     //Sky 
-    circleSVG("276", "30" ,"20", "solid", "fill:rgb(245, 245, 245)");
-    circleSVG("276", "40" ,"20", "solid", "fill:rgb(245, 245, 245)");
-    circleSVG("288", "40" ,"20", "solid", "fill:rgb(245, 245, 245)");
-    circleSVG("265", "40" ,"20", "solid", "fill:rgb(245, 245, 245)");
+    circleSVG("276", "30" ,"15", "solid", "fill:rgb(245, 245, 245)");
+    circleSVG("276", "40" ,"15", "solid", "fill:rgb(245, 245, 245)");
+    circleSVG("288", "40" ,"15", "solid", "fill:rgb(245, 245, 245)");
+    circleSVG("265", "40" ,"15", "solid", "fill:rgb(245, 245, 245)");
     //Ytre dekk 
     circleSVG("260", "170" ,"25", "solid", "fill:black");
     circleSVG("140", "170" ,"25", "solid", "fill:black");
