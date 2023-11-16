@@ -22,7 +22,7 @@ const svg = document.getElementById("svg");
 svg.setAttribute("width", "350");
 svg.setAttribute("height", "200");
 
-function circle(radius, mode, color) {
+function circleSVG(radius, mode, color) {
 console.log("tegn en sirkel");
 const circle = document.createElementNS("http://www.w3.org/2000/svg","circle");
 circle.setAttribute("cx",radius);
@@ -37,7 +37,7 @@ if (mode == "outline") {
 return circle;
 }
 // svg rectangle
-function rectangle(x, y, width, height, style) {
+function rectangleSVG(x, y, width, height, style) {
     var rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
     rect.setAttribute("x", x);
     rect.setAttribute("y", y);
