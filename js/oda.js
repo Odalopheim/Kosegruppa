@@ -26,18 +26,18 @@
     rectangleSVG("1", "130", "350", "70", "fill:rgb(30, 95, 30)" );
    rectangleSVG("1", "160", "350", "40", "fill:rgb(117, 118, 121)");
    //sol 
-   circleSVG("30", "30" ,"20", "solid", "fill:rgb(247, 213, 24)");
+   circleSVG("30", "30" ,"20", "solid", "rgb(247, 213, 24)");
     //Sky 
-    circleSVG("276", "30" ,"15", "solid", "fill:white");
-    circleSVG("276", "40" ,"15", "solid", "fill:rgb(245, 245, 245)");
-    circleSVG("288", "40" ,"15", "solid", "fill:rgb(245, 245, 245)");
-    circleSVG("265", "40" ,"15", "solid", "fill:rgb(245, 245, 245)");
+    circleSVG("276", "30" ,"15", "solid", "whitesmoke");
+    circleSVG("276", "40" ,"15", "solid", "whitesmoke");
+    circleSVG("288", "40" ,"15", "solid", "whitesmoke");
+    circleSVG("265", "40" ,"15", "solid", "whitesmoke");
     //Ytre dekk 
-    circleSVG("260", "170" ,"25", "solid", "fill:black");
-    circleSVG("140", "170" ,"25", "solid", "fill:black");
+    circleSVG("260", "170" ,"25", "solid", "black");
+    circleSVG("140", "170" ,"25", "solid", "black");
     //Indre dekk
-    circleSVG("260", "170" ,"10", "solid", "fill:rgba(245,245,245,1)");
-    circleSVG("140", "170" ,"10", "solid", "fill:)");
+    circleSVG("260", "170" ,"10", "solid", "whitesmoke");
+    circleSVG("140", "170" ,"10", "solid", "whitesmoke");
     //Bil
     rectangleSVG("99", "120", "200", "40", "fill:rgb(0, 0, 255)");
     rectangleSVG("140", "90", "120", "30", "fill:rgb(0, 0, 255)");
