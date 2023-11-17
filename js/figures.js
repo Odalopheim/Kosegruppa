@@ -23,20 +23,19 @@ const svg = document.getElementById("svg");
 svg.setAttribute("width", "350");
 svg.setAttribute("height", "200");
 
-function circleSVG(x, y, r, style, color){
+function circleSVG(x, y, r, style){
   var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
   circle.setAttribute("cx", x);
   circle.setAttribute("cy", y);
   circle.setAttribute("r", r);
   circle.setAttribute("style", style);
-  circle.setAttribute("fill",color);
+  
 
 
-  document.getElementById("svg").appendChild(circle);
-
-return circle;
+  svg.appendChild(circle);
+  
 }
-// svg rectangle
+//SVG rectangle
 function rectangleSVG(x, y, width, height, style) {
     var rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
     rect.setAttribute("x", x);
