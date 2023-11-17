@@ -26,7 +26,7 @@
     rectangleSVG("1", "130", "350", "70", "fill:rgb(30, 95, 30)" );
    rectangleSVG("1", "160", "350", "40", "fill:rgb(117, 118, 121)");
    //sol 
-   circleSVG("30", "30" ,"20", "solid", "fill::rgb(247, 213, 24)");
+   circleSVG("30", "30" ,"20", "solid", "fill:rgb(247, 213, 24)");
     //Sky 
     circleSVG("276", "30" ,"15", "solid", "fill:white");
     circleSVG("276", "40" ,"15", "solid", "fill:rgb(245, 245, 245)");
