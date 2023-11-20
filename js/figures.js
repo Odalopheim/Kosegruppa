@@ -22,19 +22,15 @@ const svg = document.getElementById("svg");
 svg.setAttribute("width", "350");
 svg.setAttribute("height", "200");
 
-function circleSVG(radius, mode, color) {
+function circleSVG(x, y, r, style) {
 console.log("tegn en sirkel");
 const circle = document.createElementNS("http://www.w3.org/2000/svg","circle");
-circle.setAttribute("cx",radius);
-circle.setAttribute("cy",radius);
-circle.setAttribute("r",radius);
-if (mode == "outline") {
-    circle.setAttribute("stroke", color);
-} else {
-    circle.setAttribute("fill",color);
-}
+circle.setAttribute("cx",x);
+circle.setAttribute("cy",y);
+circle.setAttribute("r",r);
+circle.setAttribute("style", style);
 
-return circle;
+document.getElementById("svg").appendChild(circle);
 }
 // svg rectangle
 function rectangleSVG(x, y, width, height, style) {
