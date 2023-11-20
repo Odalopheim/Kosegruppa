@@ -33,8 +33,8 @@
     circleSVG("288", "40" ,"15", "fill:whitesmoke");
     circleSVG("265", "40" ,"15",  "fill:whitesmoke");
     //Ytre dekk 
-    circleSVG("260", "170" ,"25", "solid", "black");
-    circleSVG("140", "170" ,"25", "solid", "black");
+    circleSVG("260", "170" ,"25", "fill:black");
+    circleSVG("140", "170" ,"25", "fill:black");
     //Indre dekk
     circleSVG("260", "170" ,"10",  "fill:whitesmoke");
     circleSVG("140", "170" ,"10", "fill:whitesmoke");
