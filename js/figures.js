@@ -32,7 +32,7 @@ function circleSVG(x, y, r, style){
   
 
 
-  svg.appendChild(circle);
+  document.getElementById("svg").appendChild(circle);
   
 }
 //SVG rectangle
