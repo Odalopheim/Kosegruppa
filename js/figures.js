@@ -2,10 +2,17 @@ const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
 // funksjon for rektangel
-rectangle = function(height, width, x, y, mode, color) {
-  ctx.fillStyle = color, mode;
-  ctx.fillRect(x, y, width, height);
-}
+function drawRectangle(height, width, x, y, mode, color) {
+  ctx.fillStyle = color;
+  if (mode === "outline") {
+  // Set the outline color
+      ctx.strokeStyle = color;
+  // Draw the rectangle's outline
+      ctx.strokeRect(x, y, width, height);
+  } else {
+  // Draw the filled rectangle
+      ctx.fillRect(x, y, width, height);
+  }}
 //funksjon for sirkel
 circle = function(radius, mode, color, x, y) {
   ctx.fillStyle = color;
@@ -36,13 +43,24 @@ function circleSVG(x, y, r, style){
   
 }
 //SVG rectangle
-function rectangleSVG(x, y, width, height, style) {
-    var rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-    rect.setAttribute("x", x);
-    rect.setAttribute("y", y);
-    rect.setAttribute("width", width);
-    rect.setAttribute("height", height);
-    rect.setAttribute("style", style);
+function rectangleSVG(x, y, width, height, style, mode, rotation, fillColor, strokeColor) {
+  var svgns = "http://www.w3.org/2000/svg";
+  var svg = document.getElementById("svg");
 
-    document.getElementById("svg").appendChild(rect);
+  var rect = document.createElementNS(svgns, "rect");
+  rect.setAttribute("x", x);
+  rect.setAttribute("y", y);
+  rect.setAttribute("width", width);
+  rect.setAttribute("height", height);
+  rect.setAttribute("style", style);
+  rect.setAttribute("transform", `rotate(${rotation} ${x + width / 2} ${y + height / 2})`);
+
+  if (mode === "solid") {
+      rect.setAttribute("fill", fillColor);
+  } else {
+      rect.setAttribute("stroke", strokeColor);
+      rect.setAttribute("fill", "none");
+  }
+
+  svg.appendChild(rect);
 }
