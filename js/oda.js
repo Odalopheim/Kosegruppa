@@ -1,8 +1,8 @@
 //Canvas
 // Bakrunn 
- rectangle(200, 350, 1, 1, "Solid", "rgb(71, 175, 236")
- rectangle(70, 350, 1, 130, "Solid", "rgb(30, 95, 30)")
- rectangle(40, 350, 1, 160, "Solid", "rgb(117, 118, 121)")
+drawRectangle(200, 350, 1, 1, "Solid", "rgb(71, 175, 236") 
+drawRectangle(70, 350, 1, 130, "Solid", "rgb(30, 95, 30)")
+drawRectangle(40, 350, 1, 160, "Solid", "rgb(117, 118, 121)")
  // Sol
  circle(20,"solid","rgb(255,215,0)", 30, 30)
  // Sky
@@ -17,8 +17,8 @@
  circle(10,"solid","whitesmoke", 260, 170)
  circle(10,"solid","whitesmoke", 140, 170)
  //Bil 
- rectangle(40, 200, 99, 120, "Solid", "blue")
- rectangle(30, 120, 140, 90, "Solid", "blue")
+ drawRectangle(40, 200, 99, 120, "Solid", "blue")
+ drawRectangle(30, 120, 140, 90, "Solid", "blue")
 
 //SVG
     //bakrunn 
