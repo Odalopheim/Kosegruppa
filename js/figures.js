@@ -49,43 +49,6 @@ function ellipse(color, lineWidth, x, y, stretchX, stretchY, startAngle, endAngl
   }
 }
 
-//funksjon for trekant
-function triangles(hx1, hy1, hx2, hy2, hx3, hy3, length, color, retning, skygge){
-  ctx.fillStyle = color;
-  ctx.strokeStyle = color;
-  ctx.lineWidth = 4;
-  if (retning == "v") {
-    let height = length * Math.cos(Math.PI / 6);
-    
-    ctx.beginPath();
-    ctx.moveTo(hx1 - height, hy1);
-    ctx.lineTo(hx2, hy2);
-    ctx.lineTo(hx3, hy3);
-    ctx.closePath();
-  }
-  else{
-    let width = length * Math.cos(Math.PI / 6);
-        
-    ctx.beginPath();
-    ctx.moveTo(hx1, hy1);
-    ctx.lineTo(hx2 - width, hy1 + (length/2) );
-    ctx.lineTo(hx3 - width, hy1 - (length/2));
-    ctx.closePath();
-  }
-if (skygge == "j"){
-  ctx.beginPath();
-  ctx.moveTo(hx1, hy1);
-  ctx.lineTo(hx2, hy2);
-  ctx.lineTo(hx3, hy3);
-  ctx.closePath();
-}
-else{
-
-}
-  ctx.fill();
-  ctx.stroke();
-}
-
 //svg circle
 const svg = document.getElementById("svg");
 svg.setAttribute("width", "350");
@@ -98,7 +61,6 @@ function circleSVG(x, y, r, style){
   circle.setAttribute("r", r);
   circle.setAttribute("style", style);
   
-
 
   document.getElementById("svg").appendChild(circle);
   
@@ -124,4 +86,25 @@ function rectangleSVG(x, y, width, height, style, mode, rotation, fillColor, str
   }
 
   svg.appendChild(rect);
+}
+
+//elipse svg
+const ellipseContainer = document.getElementById("svg");
+ellipseContainer.setAttribute("width", "350");
+ellipseContainer.setAttribute("height", "200");
+
+function createEllipse(x, y, rx, ry, style, rotation) {
+  var ellipse = document.createElementNS("http://www.w3.org/2000/svg", "ellipse");
+  ellipse.setAttribute("cx", x);
+  ellipse.setAttribute("cy", y);
+  ellipse.setAttribute("rx", rx);
+  ellipse.setAttribute("ry", ry);
+
+  if (rotation) {
+    ellipse.setAttribute("transform", `rotate(${rotation} ${x} ${y})`);
+  }
+
+  ellipse.setAttribute("style", style);
+
+  document.getElementById("svg").appendChild(ellipse);
 }
