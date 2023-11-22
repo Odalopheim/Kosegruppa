@@ -1,6 +1,5 @@
 //Canvas
-const canvas = document.getElementById("canvasfredrik");
-const ctx = canvas.getContext("2d");
+
 
 // Bakrunn
 scale(1/2, 1/2)
