@@ -36,7 +36,6 @@ rectangleSVG("60", "50", "20", "79","fill:rgb(0, 0, 210)");
 rectangleSVG("65", "60", "3", "60","fill:rgba(255, 255, 255, 0.2)");
 createEllipse(70, 50, 10, 6, "fill:rgb(0, 0, 153);");
 createEllipse(70, 130, 10, 6, "fill:rgb(0, 0, 210);");
-=======
 //Canvas
 // Bakrunn
 scale(1/2, 1/2)
