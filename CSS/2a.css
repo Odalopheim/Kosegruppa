@@ -39,7 +39,16 @@
     float: none;
     width: 25%;
     background: none;
-    
+
+}
+.img4 {
+    height: auto;
+    width: 10%;
+    object-fit: cover;
+    float: left;
+    position: absolute;
+    bottom: 20px;
+    right: 260px;
 }
 #tab{
     text-align: center;
