@@ -1,5 +1,4 @@
-const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
+
 
 // funksjon for rektangel
 function drawRectangle(height, width, x, y, mode, color) {
@@ -25,6 +24,30 @@ circle = function(radius, mode, color, x, y) {
   }
 }
 
+  // funksjon for rotering
+function rot(deg) {
+      ctx.rotate((deg * Math.PI) / 180);
+  }
+
+  //funksjon for skalering
+  function scale(x, y){
+    ctx.scale(x, y);
+  }
+
+
+//funsjon for elipse
+function ellipse(color, lineWidth, x, y, stretchX, stretchY, startAngle, endAngle) {
+  for (var angle = startAngle; angle < endAngle; angle += Math.PI / 180) {
+    ctx.beginPath()
+    ctx.moveTo(x, y)
+    ctx.lineTo(x + Math.cos(angle) * stretchX, y + Math.sin(angle) * stretchY)
+    ctx.lineWidth = lineWidth
+    ctx.strokeStyle = color
+    ctx.stroke()
+    ctx.closePath()
+  }
+}
+
 //svg circle
 const svg = document.getElementById("svg");
 svg.setAttribute("width", "350");
@@ -37,7 +60,6 @@ function circleSVG(x, y, r, style){
   circle.setAttribute("r", r);
   circle.setAttribute("style", style);
   
-
 
   document.getElementById("svg").appendChild(circle);
   
@@ -63,4 +85,25 @@ function rectangleSVG(x, y, width, height, style, mode, rotation, fillColor, str
   }
 
   svg.appendChild(rect);
+}
+
+//elipse svg
+const ellipseContainer = document.getElementById("svg");
+ellipseContainer.setAttribute("width", "350");
+ellipseContainer.setAttribute("height", "200");
+
+function createEllipse(x, y, rx, ry, style, rotation) {
+  var ellipse = document.createElementNS("http://www.w3.org/2000/svg", "ellipse");
+  ellipse.setAttribute("cx", x);
+  ellipse.setAttribute("cy", y);
+  ellipse.setAttribute("rx", rx);
+  ellipse.setAttribute("ry", ry);
+
+  if (rotation) {
+    ellipse.setAttribute("transform", `rotate(${rotation} ${x} ${y})`);
+  }
+
+  ellipse.setAttribute("style", style);
+
+  document.getElementById("svg").appendChild(ellipse);
 }
