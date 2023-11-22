@@ -1,4 +1,5 @@
 //Canvas
+
 // Bakrunn 
 drawRectangle(200, 350, 1, 1, "Solid", "rgb(71, 175, 236") 
 drawRectangle(70, 350, 1, 130, "Solid", "rgb(30, 95, 30)")
