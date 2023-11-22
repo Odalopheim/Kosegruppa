@@ -1,3 +1,5 @@
+
+
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
@@ -107,4 +109,4 @@ function createEllipse(x, y, rx, ry, style, rotation) {
   ellipse.setAttribute("style", style);
 
   document.getElementById("svg").appendChild(ellipse);
-}
+

@@ -1,6 +1,5 @@
 
 
-
 // Canvas
 drawRectangle(200, 200, 0, 0, "solid", "green");
 drawRectangle(185, 185, 7.5, 7.5, "solid", "darkblue");
