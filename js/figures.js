@@ -1,5 +1,6 @@
 
-
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
 // funksjon for rektangel
 function drawRectangle(height, width, x, y, mode, color) {
   ctx.fillStyle = color;
