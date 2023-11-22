@@ -25,6 +25,67 @@ circle = function(radius, mode, color, x, y) {
   }
 }
 
+  // funksjon for rotering
+function rot(deg) {
+      ctx.rotate((deg * Math.PI) / 180);
+  }
+
+  //funksjon for skalering
+  function scale(x, y){
+    ctx.scale(x, y);
+  }
+
+
+//funsjon for elipse
+function ellipse(color, lineWidth, x, y, stretchX, stretchY, startAngle, endAngle) {
+  for (var angle = startAngle; angle < endAngle; angle += Math.PI / 180) {
+    ctx.beginPath()
+    ctx.moveTo(x, y)
+    ctx.lineTo(x + Math.cos(angle) * stretchX, y + Math.sin(angle) * stretchY)
+    ctx.lineWidth = lineWidth
+    ctx.strokeStyle = color
+    ctx.stroke()
+    ctx.closePath()
+  }
+}
+
+//funksjon for trekant
+function triangles(hx1, hy1, hx2, hy2, hx3, hy3, length, color, retning, skygge){
+  ctx.fillStyle = color;
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 4;
+  if (retning == "v") {
+    let height = length * Math.cos(Math.PI / 6);
+    
+    ctx.beginPath();
+    ctx.moveTo(hx1 - height, hy1);
+    ctx.lineTo(hx2, hy2);
+    ctx.lineTo(hx3, hy3);
+    ctx.closePath();
+  }
+  else{
+    let width = length * Math.cos(Math.PI / 6);
+        
+    ctx.beginPath();
+    ctx.moveTo(hx1, hy1);
+    ctx.lineTo(hx2 - width, hy1 + (length/2) );
+    ctx.lineTo(hx3 - width, hy1 - (length/2));
+    ctx.closePath();
+  }
+if (skygge == "j"){
+  ctx.beginPath();
+  ctx.moveTo(hx1, hy1);
+  ctx.lineTo(hx2, hy2);
+  ctx.lineTo(hx3, hy3);
+  ctx.closePath();
+}
+else{
+
+}
+  ctx.fill();
+  ctx.stroke();
+}
+
 //svg circle
 const svg = document.getElementById("svg");
 svg.setAttribute("width", "350");
