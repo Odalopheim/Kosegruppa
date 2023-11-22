@@ -2,18 +2,18 @@
 
 
 // Canvas
-drawRectangle(200, 200, 0, 100, "solid", "green");
-drawRectangle(185, 185, 7.5, 107.5, "solid", "darkblue");
-drawRectangle(170, 170, 15, 115, "solid", "purple");
-drawRectangle(155, 155, 22.5, 122.5, "solid", "orange");
-drawRectangle(140, 140, 30, 130, "solid", "crimson");
-drawRectangle(125, 125, 37.5, 137.5, "solid", "hotpink");
-drawRectangle(110, 110, 45, 145, "solid", "yellow");
-drawRectangle(95, 95, 52.5, 152.5, "solid", "indigo");
-drawRectangle(80, 80, 60, 160, "solid", "red");
-drawRectangle(65, 65, 67.5, 167.5, "solid", "dodgerblue");
-drawRectangle(50, 50, 75, 175, "solid", "orchid");
-drawRectangle(35, 35, 82.5, 182.5, "solid", "aqua");
+drawRectangle(200, 200, 0, 0, "solid", "green");
+drawRectangle(185, 185, 7.5, 7.5, "solid", "darkblue");
+drawRectangle(170, 170, 15, 15, "solid", "purple");
+drawRectangle(155, 155, 22.5, 22.5, "solid", "orange");
+drawRectangle(140, 140, 30, 30, "solid", "crimson");
+drawRectangle(125, 125, 37.5, 37.5, "solid", "hotpink");
+drawRectangle(110, 110, 45, 45, "solid", "yellow");
+drawRectangle(95, 95, 52.5, 52.5, "solid", "indigo");
+drawRectangle(80, 80, 60, 60, "solid", "red");
+drawRectangle(65, 65, 67.5, 67.5, "solid", "dodgerblue");
+drawRectangle(50, 50, 75, 75, "solid", "orchid");
+drawRectangle(35, 35, 82.5, 82.5, "solid", "aqua");
 
 
 // SVG
