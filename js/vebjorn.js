@@ -1,5 +1,4 @@
-const canvas = document.getElementById("canvasvebjorn");
-const ctx = canvas.getContext("2d");
+
 
 // Canvas
 drawRectangle(200, 200, 0, 0, "solid", "green");
