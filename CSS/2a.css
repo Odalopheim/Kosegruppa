@@ -2,6 +2,7 @@
   body {
     
     margin: auto;
+    margin-top: -150px; 
     width: auto;
     padding: 10%;
    
@@ -28,7 +29,7 @@
     margin-left: 20px; 
     margin-top: -10px;
  position: absolute;
- top: 120px;
+ top: 90px;
  right: 10px;
  border: 10px solid gray;
 }
